@@ -8,6 +8,7 @@ jobs:
   deploy-practica:
     runs-on: ubuntu-latest
     steps:
-      run: echo "pull code"
-      run: echo "correr migraciones"
-      run: echo "finalizado"
+      - uses: actions/checkout@v4
+      - run: echo "pull code"
+      - run: echo "correr migraciones"
+      - run: echo "finalizado"
