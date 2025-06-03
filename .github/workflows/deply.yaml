@@ -1,0 +1,13 @@
+name: "Deploy Practica"
+
+on:
+  push:
+    brances: ["main"]
+
+jobs:
+  deploy-practica:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "pull code"
+      run: echo "correr migraciones"
+      run: echo "finalizado"
